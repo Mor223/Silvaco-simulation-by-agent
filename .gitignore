@@ -11,11 +11,16 @@
 
 # License and local config
 *.lic
-license*
-*.env
-.env
+*.license
+license.dat
+license.key
+license_server*
 local_config.yaml
 silvaco_paths.yaml
+
+# Keep open-source license files
+!LICENSE
+!LICENSE.md
 
 # Local examples and archives
 raw_examples/
