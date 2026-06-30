@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          python -m pytest -q
+
+      - name: Run sanitization audit
+        run: |
+          python scripts/audit_sanitization.py .
+
+      - name: Run portability audit
+        run: |
+          python scripts/audit_portability.py .
+
+      - name: Search smoke test
+        run: |
+          python scripts/search_silvaco_examples.py --query "PN diode IV"
