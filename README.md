@@ -45,3 +45,15 @@ Generate Deck Workflow, Error Analysis Workflow, New Example Learning Workflow, 
 ## Copyright And Security
 
 This project contains original templates, scripts, documentation, and compact syntax-pattern summaries. Users must hold their own valid Silvaco license and must not publish private decks, license files, local paths, or sensitive runtime outputs.
+
+## For AI Agents
+
+Before generating any Silvaco deck:
+
+1. Read `AGENTS.md`.
+2. Read `skills/nl_to_silvaco_simulation/SKILL.md`.
+3. Search `data/silvaco_examples_index.public.json` using `scripts/search_silvaco_examples.py`.
+4. Ask the user for missing parameters.
+5. Generate separate DevEdit/ATHENA and ATLAS `.in` files.
+6. Run `scripts/check_deck_static.py`.
+7. Do not run Silvaco, DeckBuild, ATLAS, ATHENA, DevEdit, or TonyPlot.
