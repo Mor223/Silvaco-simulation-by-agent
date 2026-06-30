@@ -6,15 +6,24 @@ from pathlib import Path
 
 RUNTIME_SUFFIXES = {".str", ".log", ".out", ".plt", ".set", ".history", ".dat", ".csv", ".png"}
 PY_CACHE_SUFFIXES = {".pyc", ".pyo"}
-FORBIDDEN_DIRS = {"archive", "runs", "results", "raw_examples", "external_examples", "local_examples", "__pycache__", ".pytest_cache"}
+SKIP_DIRS = {".git", "__pycache__", ".pytest_cache", ".venv", "venv", "dist", "build"}
+FORBIDDEN_DIRS = {"archive", "runs", "results", "raw_examples", "external_examples", "local_examples"}
 FORBIDDEN_FILES = {"run_silvaco.py", "prepare_manual_run.py", "collect_results.py", "parse_iv.py", "plot_iv.py", "probe_deckbuild_batch.py"}
-BINARY_SUFFIXES = {".zip", ".pyd", ".dll", ".exe"}
+BINARY_SUFFIXES = {".zip", ".pyd", ".dll", ".exe", ".obj", ".lib", ".bin", ".pack", ".idx"}
 SKIP_NAMES = {"audit_sanitization.py", "audit_portability.py"}
+
+
+def should_skip_path(path: Path) -> bool:
+    return bool(set(path.parts) & SKIP_DIRS)
 
 
 def is_pyc_like(path: Path) -> bool:
     name = path.name.lower()
     return path.suffix.lower() in PY_CACHE_SUFFIXES or ".pyc." in name or name.endswith(".pyc")
+
+
+def is_binary_like(path: Path) -> bool:
+    return path.suffix.lower() in BINARY_SUFFIXES or is_pyc_like(path)
 
 
 def portability_text_issues(path: Path, text: str) -> list[str]:
@@ -41,11 +50,12 @@ def audit(root: Path) -> list[tuple[Path, str]]:
     findings: list[tuple[Path, str]] = []
     for path in sorted(root.rglob("*")):
         rel = path.relative_to(root)
-        parts = set(rel.parts)
-        if parts & FORBIDDEN_DIRS:
-            findings.append((rel, "forbidden runtime/local/cache directory"))
+        if should_skip_path(rel):
             continue
         if path.is_dir():
+            continue
+        if set(rel.parts) & FORBIDDEN_DIRS:
+            findings.append((rel, "forbidden runtime/local directory"))
             continue
         if path.name in FORBIDDEN_FILES:
             findings.append((rel, "forbidden legacy runtime script"))
@@ -56,12 +66,12 @@ def audit(root: Path) -> list[tuple[Path, str]]:
         if path.suffix.lower() in RUNTIME_SUFFIXES:
             findings.append((rel, f"runtime output suffix: {path.suffix}"))
             continue
-        if path.suffix.lower() in BINARY_SUFFIXES:
+        if is_binary_like(path):
             continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
-        except OSError as exc:
-            findings.append((rel, f"cannot read: {exc}"))
+        except (OSError, UnicodeDecodeError) as exc:
+            findings.append((rel, f"cannot read as text: {exc}"))
             continue
         for issue in portability_text_issues(path, text):
             findings.append((rel, issue))

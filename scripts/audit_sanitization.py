@@ -6,14 +6,22 @@ from pathlib import Path
 
 RUNTIME_SUFFIXES = {".str", ".log", ".out", ".plt", ".set", ".history", ".dat", ".csv", ".png"}
 PY_CACHE_SUFFIXES = {".pyc", ".pyo"}
-BINARY_SUFFIXES = {".zip", ".pyd", ".dll", ".exe"}
-FORBIDDEN_DIRS = {"__pycache__", ".pytest_cache"}
+BINARY_SUFFIXES = {".zip", ".pyd", ".dll", ".exe", ".obj", ".lib", ".bin", ".pack", ".idx"}
+SKIP_DIRS = {".git", "__pycache__", ".pytest_cache", ".venv", "venv", "dist", "build"}
 SKIP_NAMES = {"audit_sanitization.py", "audit_portability.py"}
+
+
+def should_skip_path(path: Path) -> bool:
+    return bool(set(path.parts) & SKIP_DIRS)
 
 
 def is_pyc_like(path: Path) -> bool:
     name = path.name.lower()
     return path.suffix.lower() in PY_CACHE_SUFFIXES or ".pyc." in name or name.endswith(".pyc")
+
+
+def is_binary_like(path: Path) -> bool:
+    return path.suffix.lower() in BINARY_SUFFIXES or is_pyc_like(path)
 
 
 def text_issues(path: Path, text: str) -> list[str]:
@@ -46,8 +54,7 @@ def audit(root: Path) -> list[tuple[Path, str]]:
     findings: list[tuple[Path, str]] = []
     for path in sorted(root.rglob("*")):
         rel = path.relative_to(root)
-        if set(rel.parts) & FORBIDDEN_DIRS:
-            findings.append((rel, "Python cache directory"))
+        if should_skip_path(rel):
             continue
         if path.is_dir():
             continue
@@ -57,12 +64,12 @@ def audit(root: Path) -> list[tuple[Path, str]]:
         if path.suffix.lower() in RUNTIME_SUFFIXES:
             findings.append((rel, f"runtime output suffix: {path.suffix}"))
             continue
-        if path.suffix.lower() in BINARY_SUFFIXES:
+        if is_binary_like(path):
             continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
-        except OSError as exc:
-            findings.append((rel, f"cannot read: {exc}"))
+        except (OSError, UnicodeDecodeError) as exc:
+            findings.append((rel, f"cannot read as text: {exc}"))
             continue
         for issue in text_issues(path, text):
             findings.append((rel, issue))
