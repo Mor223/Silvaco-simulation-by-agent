@@ -1,0 +1,11 @@
+value:
+  route: athena_atlas
+  template: athena_process/generic_diode_process_athena.in.j2
+  athena:
+    case_name: <CASE_NAME>
+    structure_output: <CASE_NAME>_process.str
+    mesh: {x_lines: [], y_lines: []}
+    substrate: {type: p, concentration: 1.0e15, orientation: 100}
+    process_steps: []
+    electrodes: []
+confirmed_by_user: false

@@ -1,0 +1,15 @@
+value:
+  route: athena_atlas
+  control_baseline: false
+  template: atlas_simulation/electrical_iv_atlas.in.j2
+  atlas:
+    case_name: pn_athena_atlas_minimal
+    structure_input: pn_athena_atlas_minimal_process.str
+    models: [srh]
+    method: newton
+    contacts: []
+    iv_log: pn_athena_atlas_minimal_iv.log
+    final_structure: pn_athena_atlas_minimal_final.str
+    sweeps:
+      - {electrode: anode, start: -1.0, step: 0.1, stop: 1.0}
+confirmed_by_user: true

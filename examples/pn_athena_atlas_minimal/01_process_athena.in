@@ -1,0 +1,13 @@
+# Example only. Minimal ATHENA process sketch; not physically validated.
+go athena
+line x loc=0.0 spac=0.1
+line x loc=1.0 spac=0.1
+line y loc=0.0 spac=0.05
+line y loc=1.0 spac=0.05
+init silicon c.p=1.0e15 orientation=100
+implant phosphorus dose=1.0e13 energy=50
+diffuse time=10 temp=900
+electrode name=anode left
+electrode name=cathode right
+structure outfile=pn_athena_atlas_minimal_process.str
+quit

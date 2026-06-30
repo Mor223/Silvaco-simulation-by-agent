@@ -1,0 +1,26 @@
+﻿# Generated DevEdit structure deck for {{ case_name }}.
+# Route: DevEdit -> {{ structure_output }} -> ATLAS.
+
+go devedit
+
+{% for region in regions -%}
+region reg={{ region.id }} name={{ region.name }} mat={{ region.material }}{% if region.elec_id is defined %} elec.id={{ region.elec_id }}{% endif %} color={{ region.color | default('0xffcc00') }} pattern={{ region.pattern | default('0x4') }}{% if dimension == '3d' %} z1={{ region.z_min }} z2={{ region.z_max }}{% endif %} polygon="{{ region.polygon }}"
+{% if region.impurity is defined -%}
+impurity id={{ region.impurity.id }} region.id={{ region.id }} imp={{ region.impurity.species }} peak.value={{ region.impurity.concentration }} ref.value={{ region.impurity.ref_value | default('1e12') }} comb.func={{ region.impurity.comb_func | default('Multiply') }}
+{% endif -%}
+constr.mesh region={{ region.id }} default
+
+{% endfor -%}
+{% for implant in implants | default([]) -%}
+impurity id={{ implant.id }} imp={{ implant.species }} peak.value={{ implant.concentration }} ref.value={{ implant.ref_value | default('1e14') }} comb.func={{ implant.comb_func | default('Multiply') }} x1={{ implant.x_min }} x2={{ implant.x_max }} rolloff.x={{ implant.rolloff_x | default('step') }} y1={{ implant.y_min }} y2={{ implant.y_max }} rolloff.y={{ implant.rolloff_y | default('step') }}
+{% endfor %}
+base.mesh height={{ mesh.base_height }} width={{ mesh.base_width }}
+bound.cond !apply max.slope=28 max.ratio=300 rnd.unit=0.001 line.straightening=1 align.points when=automatic
+constr.mesh max.angle=90 max.ratio=300 max.height=10000 max.width=10000 min.height={{ mesh.min_height }} min.width={{ mesh.min_width }}
+constr.mesh type=Semiconductor default
+constr.mesh type=Metal default
+Mesh Mode=MeshBuild
+
+struct outf={{ structure_output }}
+quit
+

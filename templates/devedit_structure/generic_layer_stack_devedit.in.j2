@@ -1,0 +1,16 @@
+﻿# Generic DevEdit layer-stack template for {{ case_name }}.
+# Fill only after layer geometry, materials, electrodes, and mesh strategy are confirmed.
+
+go devedit
+
+{% for layer in layers -%}
+region reg={{ layer.id }} name={{ layer.name }} mat={{ layer.material }} polygon="{{ layer.polygon }}"
+constr.mesh region={{ layer.id }} default
+{% endfor %}
+
+base.mesh height={{ mesh.base_height }} width={{ mesh.base_width }}
+constr.mesh type=Semiconductor default
+Mesh Mode=MeshBuild
+
+struct outf={{ structure_output }}
+quit

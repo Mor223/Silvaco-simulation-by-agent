@@ -1,0 +1,21 @@
+﻿# Generated ATHENA process deck for {{ case_name }}.
+# Route: ATHENA -> {{ structure_output }} -> ATLAS.
+
+go athena
+
+{% for line in mesh.x_lines -%}
+line x loc={{ line.loc }} spac={{ line.spac }}
+{% endfor -%}
+{% for line in mesh.y_lines -%}
+line y loc={{ line.loc }} spac={{ line.spac }}
+{% endfor %}
+init silicon c.{{ substrate.type }}={{ substrate.concentration }} orientation={{ substrate.orientation }}
+
+{% for step in process_steps -%}
+{{ step.command }}
+{% endfor %}
+{% for electrode in electrodes -%}
+electrode name={{ electrode.name }} {{ electrode.location }}
+{% endfor %}
+structure outfile={{ structure_output }}
+quit

@@ -1,0 +1,4775 @@
+{
+  "schema": "silvaco_syntax_patterns.public.v1",
+  "copyright_note": "Short syntax snippets and pattern tags only; no complete official deck source is redistributed.",
+  "patterns": {
+    "devedit": {
+      "region": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        }
+      ],
+      "mat=": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex01/thermalex01.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "region reg=1 mat=Silicon color=0xffc000 pattern=0x4 Z1=0 Z2=100 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex02/thermalex02.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "region reg=1 mat=Silicon color=0xffc000 pattern=0x4 Z1=0 Z2=10 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex03/thermalex03.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "region reg=1 mat=Silicon color=0xffc000 pattern=0x4 Z1=0 Z2=10 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex04/thermalex04.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "iii_v",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "region reg=1 mat=GaAs color=0xffcb pattern=0x9 Z1=0 Z2=75 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex05/thermalex05.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "region reg=1 mat=Silicon color=0xffc000 pattern=0x4 Z1=0 Z2=100 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex06/thermalex06.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "region reg=1 mat=Silicon color=0xffc000 pattern=0x4 Z1=0 Z2=100 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex07/thermalex07.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "region reg=1 mat=Silicon color=0xffc000 pattern=0x4 Z1=0 Z2=100 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex02/solarex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "models",
+            "optical"
+          ],
+          "snippets": [
+            "material mat=Silicon mun=20 mup=1.5 nc300=2.5e20 nv300=2.5e20 eg300=1.9"
+          ]
+        }
+      ],
+      "mesh mode=meshbuild": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex01/thermalex01.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex01.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex02/thermalex02.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex02.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex03/thermalex03.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex03.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex05/thermalex05.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex05.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex06/thermalex06.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex06.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex07/thermalex07.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex07.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex06/solarex06.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "diffuse",
+            "diffusion",
+            "extract",
+            "impurity"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=solarex06_2.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex16/solarex16_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "doping",
+            "electrode",
+            "etch",
+            "extract"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild"
+          ]
+        }
+      ],
+      "structure outf": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": [
+            "structure outf=tftex05_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": [
+            "structure outfile=tftex12_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "structure outf=solarex01_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex13/solarex13_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": [
+            "structure outf=solarex13_$'nbcells'cells_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex16/solarex16_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "doping",
+            "electrode",
+            "etch",
+            "extract"
+          ],
+          "snippets": [
+            "structure outfile=solarex16_0_$\"Length_half_pyr\".str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex18/solarex18_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init",
+            "iv"
+          ],
+          "snippets": [
+            "structure outf=solarex18_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/soi/soiex08/soiex08.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch"
+          ],
+          "snippets": [
+            "structure outfile=soiex08_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex04/sicex04.in",
+          "tags": [
+            "athena",
+            "cv",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "line",
+            "process",
+            "process_device_flow",
+            "sic",
+            "struct_out",
+            "tonyplot"
+          ],
+          "snippets": [
+            "structure outfile=sicex04_init.str"
+          ]
+        }
+      ],
+      "impurity": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex06/solarex06.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "diffuse",
+            "diffusion",
+            "extract",
+            "impurity"
+          ],
+          "snippets": [
+            "impurity id=1 region.id=1 imp=Boron \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex02/sicex02.in",
+          "tags": [
+            "atlas",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method"
+          ],
+          "snippets": [
+            "impurity id=1 region.id=1 imp=Arsenic \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex03/sicex03.in",
+          "tags": [
+            "atlas",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method"
+          ],
+          "snippets": [
+            "impurity id=1 region.id=1 imp=Arsenic \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex04/sicex04.in",
+          "tags": [
+            "athena",
+            "cv",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "line",
+            "process",
+            "process_device_flow",
+            "sic",
+            "struct_out",
+            "tonyplot"
+          ],
+          "snippets": [
+            "extract name=\"al30\" curve(depth,impurity=\"Aluminum\" material=\"All\" x.val=0.0) \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex05/sicex05.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxide",
+            "process"
+          ],
+          "snippets": [
+            "extract name=\"d0.63e13\" curve(depth,impurity=\"Aluminum\" material=\"All\" x.val=0.0) \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex06/sicex06.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxide",
+            "process"
+          ],
+          "snippets": [
+            "extract name=\"al2.15e13\" curve(depth,impurity=\"Aluminum\" material=\"All\" x.val=0.0) \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/radiation/radex01/radex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "mesh",
+            "method",
+            "mobility",
+            "models"
+          ],
+          "snippets": [
+            "impurity id=1 region.id=1 imp=Boron color=0x906000 \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/radiation/radex02/radex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "mesh",
+            "method",
+            "mobility",
+            "models"
+          ],
+          "snippets": [
+            "impurity id=1 region.id=1 imp=Boron color=0x906000 \\"
+          ]
+        }
+      ],
+      "struct outf": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex06/solarex06.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "diffuse",
+            "diffusion",
+            "extract",
+            "impurity"
+          ],
+          "snippets": [
+            "struct outf=solarex06_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex02/sicex02.in",
+          "tags": [
+            "atlas",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method"
+          ],
+          "snippets": [
+            "struct outf=sicex02_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex03/sicex03.in",
+          "tags": [
+            "atlas",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method"
+          ],
+          "snippets": [
+            "struct outf=sicex03_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex09/powerex09.in",
+          "tags": [
+            "atlas",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method"
+          ],
+          "snippets": [
+            "struct outf=powerex09_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex10/powerex10.in",
+          "tags": [
+            "atlas",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method"
+          ],
+          "snippets": [
+            "struct outf=powerex10_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/optoelectronics/optoex17/optoex17.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "mobility",
+            "models"
+          ],
+          "snippets": [
+            "struct outf=optoex17_1.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/diode/diodeex07/diodeex07.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "extract",
+            "iii_v",
+            "impurity",
+            "iv",
+            "log",
+            "mesh"
+          ],
+          "snippets": [
+            "struct outf=diodeex07.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/diode/diodeex08/diodeex08.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "impurity",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "mobility",
+            "pn_diode"
+          ],
+          "snippets": [
+            "struct outf=diodeex08_0.str"
+          ]
+        }
+      ],
+      "elec.id": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/diode/diodeex07/diodeex07.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "extract",
+            "iii_v",
+            "impurity",
+            "iv",
+            "log",
+            "mesh"
+          ],
+          "snippets": [
+            "region reg=1 name=anode mat=Gold elec.id=1 work.func=0 color=0x595959 pattern=0xb \\"
+          ]
+        }
+      ]
+    },
+    "athena": {
+      "init": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex01/tftex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex02/tftex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex03/tftex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex04/tftex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        }
+      ],
+      "electrode": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        }
+      ],
+      "line x": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": [
+            "line x loc=0   spac=0.2"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": [
+            "line x loc=0  spac=1"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "line x loc=0.00 spac=1"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex13/solarex13_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": [
+            "line x loc=0.00 \t\t\t\t                  spac=200"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex16/solarex16_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "doping",
+            "electrode",
+            "etch",
+            "extract"
+          ],
+          "snippets": [
+            "line x loc=0.00 spac=$Length_half_pyr/5"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex18/solarex18_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init",
+            "iv"
+          ],
+          "snippets": [
+            "line x loc=0\t\t\t\t  spac=$gap/5"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex04/sicex04.in",
+          "tags": [
+            "athena",
+            "cv",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "line",
+            "process",
+            "process_device_flow",
+            "sic",
+            "struct_out",
+            "tonyplot"
+          ],
+          "snippets": [
+            "line x loc=-1 spac=1"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex05/sicex05.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxide",
+            "process"
+          ],
+          "snippets": [
+            "line x loc=-1 spac=1"
+          ]
+        }
+      ],
+      "deposit": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex10/tftex10.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "ge",
+            "iii_v",
+            "iv",
+            "log",
+            "mesh",
+            "models",
+            "mos"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex21/tftex21_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex06/solarex06.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "diffuse",
+            "diffusion",
+            "extract",
+            "impurity"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex08/solarex08.in",
+          "tags": [
+            "athena",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "cv",
+            "deposition",
+            "diffusion",
+            "doping",
+            "extract",
+            "ge",
+            "iv",
+            "log"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex13/solarex13_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": []
+        }
+      ],
+      "depo": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex10/tftex10.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "ge",
+            "iii_v",
+            "iv",
+            "log",
+            "mesh",
+            "models",
+            "mos"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex21/tftex21_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex06/solarex06.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "diffuse",
+            "diffusion",
+            "extract",
+            "impurity"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex08/solarex08.in",
+          "tags": [
+            "athena",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "cv",
+            "deposition",
+            "diffusion",
+            "doping",
+            "extract",
+            "ge",
+            "iv",
+            "log"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex13/solarex13_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": []
+        }
+      ],
+      "etch": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex07/solarex07.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "diffusion",
+            "electrode",
+            "etch",
+            "gan",
+            "iv",
+            "log",
+            "luminous",
+            "material"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex13/solarex13_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex16/solarex16_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "doping",
+            "electrode",
+            "etch",
+            "extract"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex18/solarex18_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init",
+            "iv"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/soi/soiex08/soiex08.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch"
+          ],
+          "snippets": []
+        }
+      ],
+      "extract": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": [
+            "extract name=\"max_rev_id\" y.val from curve(v.\"gate\",i.\"drain\") where x.val=-20"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": [
+            "extract name=\"Vth\" x.val from curve(v.\"gate\", i.\"drain\") where y.val=1e-5"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex20/tftex20_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "mobility",
+            "models"
+          ],
+          "snippets": [
+            "extract init infile=\"tftex20_1_$'dt'.log\""
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex21/tftex21.in",
+          "tags": [
+            "cv",
+            "extract",
+            "iii_v",
+            "iv",
+            "mobility",
+            "save",
+            "tonyplot"
+          ],
+          "snippets": [
+            "extract init infile=\"tftex21_vd01_igzo-tokyo_253.log\""
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex21/tftex21_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "extract name=\"vt_01\" x.val from curve( v.\"gate\", abs(i.\"drain\") ) where y.val=$i_vt"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sonos/sonosex02/sonosex02_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "electrode",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "extract name=\"Charged for 0s\" (xintercept(maxslope(curve(abs(v.\"gate\"),abs(i.\"drain\")))) \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sonos/sonosex05/sonosex05.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "electrode",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "models"
+          ],
+          "snippets": [
+            "extract name=\"vt0\" (xintercept(maxslope(curve(abs(v.\"gate\"),abs(i.\"drain\")))) \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sonos/sonosex06/sonosex06_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "electrode",
+            "extract",
+            "ge",
+            "iv",
+            "log",
+            "mesh",
+            "mos"
+          ],
+          "snippets": [
+            "extract name=\"vt\" (xintercept(maxslope(curve(abs(v.\"gate\"),abs(i.\"drain\")))) \\"
+          ]
+        }
+      ],
+      "structure outfile": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": [
+            "structure outfile=tftex12_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex16/solarex16_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "doping",
+            "electrode",
+            "etch",
+            "extract"
+          ],
+          "snippets": [
+            "structure outfile=solarex16_0_$\"Length_half_pyr\".str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/soi/soiex08/soiex08.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch"
+          ],
+          "snippets": [
+            "structure outfile=soiex08_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex04/sicex04.in",
+          "tags": [
+            "athena",
+            "cv",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "line",
+            "process",
+            "process_device_flow",
+            "sic",
+            "struct_out",
+            "tonyplot"
+          ],
+          "snippets": [
+            "structure outfile=sicex04_init.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex05/sicex05.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxide",
+            "process"
+          ],
+          "snippets": [
+            "structure outfile=sicex05_init.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex06/sicex06.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxide",
+            "process"
+          ],
+          "snippets": [
+            "structure outfile=sicex06_init.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex02/powerex02.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "implant",
+            "implantation"
+          ],
+          "snippets": [
+            "structure outfile=powerex02_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex05/powerex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "bjt",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "implant",
+            "implantation"
+          ],
+          "snippets": [
+            "structure outfile=powerex05_0.str"
+          ]
+        }
+      ],
+      "implant": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "implant phos dose=1e15 energy=30"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex16/solarex16_aux.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "doping",
+            "electrode",
+            "etch",
+            "extract"
+          ],
+          "snippets": [
+            "implant phosph dose=5e15 energy=10"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/soi/soiex08/soiex08.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch"
+          ],
+          "snippets": [
+            "implant boron dose=8e12 energy=100 pears"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex04/sicex04.in",
+          "tags": [
+            "athena",
+            "cv",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "line",
+            "process",
+            "process_device_flow",
+            "sic",
+            "struct_out",
+            "tonyplot"
+          ],
+          "snippets": [
+            "implant aluminum n.ion=10000 dose=3.0e13 tilt=9 rot=45 energy=30 bca sampling"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex05/sicex05.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxide",
+            "process"
+          ],
+          "snippets": [
+            "implant aluminum diverg=0.1 n.ion=40000 dose=0.63e13 tilt=0 rot=0 energy=60 bca"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sic/sicex06/sicex06.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "extract",
+            "implant",
+            "implantation",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxide",
+            "process"
+          ],
+          "snippets": [
+            "implant aluminum diverg=0.1 n.ion=5000 dose=2.15e13 tilt=17 rot=0 energy=60 bca sampling"
+          ]
+        }
+      ],
+      "diffuse": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "diffuse time=10 temp=900"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex06/solarex06.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "diffuse",
+            "diffusion",
+            "extract",
+            "impurity"
+          ],
+          "snippets": [
+            "diffuse time=10 min temp=900 c.phosphor=2e20"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/soi/soiex08/soiex08.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch"
+          ],
+          "snippets": [
+            "diffuse time=3 temp=900 weto2 press=1.0"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex02/powerex02.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "implant",
+            "implantation"
+          ],
+          "snippets": [
+            "diffuse time=100 temp=1100"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex07/powerex07.in",
+          "tags": [
+            "athena",
+            "atlas",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "diffuse time=30 temp=1000 nitro press=1.0"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex08/powerex08.in",
+          "tags": [
+            "athena",
+            "atlas",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "diffuse time=30 temp=1000 nitro press=1.0"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/power/powerex14/powerex14.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "doping",
+            "electrode"
+          ],
+          "snippets": [
+            "diffuse time=100 temp=1100"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/mos2/mos2ex03/mos2ex03.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "diffuse time=5 temp=900 weto2 press=0.8"
+          ]
+        }
+      ],
+      "line y": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/soi/soiex08/soiex08.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch"
+          ],
+          "snippets": [
+            "line y loc=0    spac=0.02   tag=top"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/mos2/mos2ex04/mos2ex04.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "devedit",
+            "devedit_atlas_flow",
+            "diffuse",
+            "diffusion",
+            "electrode"
+          ],
+          "snippets": [
+            "line y loc=0    spac=0.05"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/athena_oxidation/anoxex01/anoxex01.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "etch",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxidation",
+            "oxide"
+          ],
+          "snippets": [
+            "line y loc=0    spac=0.05"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/athena_oxidation/anoxex04/anoxex04.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "etch",
+            "init",
+            "iv",
+            "line",
+            "mos",
+            "oxidation",
+            "oxide"
+          ],
+          "snippets": [
+            "line y loc=0  spac=0.05"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/athena_oxidation/anoxex08/anoxex08.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "etch",
+            "init",
+            "iv",
+            "line",
+            "material",
+            "method",
+            "mos"
+          ],
+          "snippets": [
+            "line y loc=0    spac=0.1"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/athena_oxidation/anoxex09/anoxex09.in",
+          "tags": [
+            "athena",
+            "cv",
+            "diffuse",
+            "diffusion",
+            "etch",
+            "extract",
+            "init",
+            "line",
+            "method",
+            "mos",
+            "oxidation",
+            "oxide"
+          ],
+          "snippets": [
+            "line y loc=0  spac=0.1"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/athena_oxidation/anoxex11/anoxex11.in",
+          "tags": [
+            "athena",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "etch",
+            "init",
+            "iv",
+            "line",
+            "method",
+            "mos",
+            "oxidation"
+          ],
+          "snippets": [
+            "line y loc=0    spac=0.06"
+          ]
+        }
+      ]
+    },
+    "atlas": {
+      "region": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top"
+          ]
+        }
+      ],
+      "material": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top",
+            "material material=AlGaAs eg300=1.42 affin=4.07 nc300=4.35e17 nv300=8.16e18 permi=13.2"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top",
+            "material material=AlGaAs eg300=1.42 affin=4.07 nc300=4.35e17 nv300=8.16e18 permi=13.2"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top",
+            "material material=AlGaAs eg300=1.42 affin=4.07 nc300=4.35e17 nv300=8.16e18 permi=13.2"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "region material=GaAs thick=0.01 sy=0.005 accept=4e19 top",
+            "material material=AlGaAs eg300=1.42 affin=4.07 nc300=4.35e17 nv300=8.16e18 permi=13.2"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex01/thermalex01.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "material region=1 tc.const=1.2"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex02/thermalex02.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "material region=1"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex03/thermalex03.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "material region=1 tcon.polynom"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex04/thermalex04.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "iii_v",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "material reg=1 tcon.power"
+          ]
+        }
+      ],
+      "electrode": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "electrode num=1 name=anode top x.max=6"
+          ]
+        }
+      ],
+      "solve init": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex01/tftex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex02/tftex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex03/tftex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex04/tftex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        }
+      ],
+      "solve": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "solve init"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex01/thermalex01.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "solve t1=300 outf=thermalex01_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex02/thermalex02.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "solve t1=300 outf=thermalex02_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex03/thermalex03.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "solve t1=300 outf=thermalex03_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex04/thermalex04.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "iii_v",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "solve t1=300 outf=thermalex04_0.str"
+          ]
+        }
+      ],
+      "log outf": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "log outf=vcselex01.log"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "log outf=vcselex02.log"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "log outf=vcselex03.log"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "log outf=vcselex04.log"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex08/thermalex08.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "generic",
+            "log",
+            "luminous",
+            "mesh",
+            "method",
+            "models",
+            "optical",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "log outfile=thermalex08.log"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex01/tftex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "log outf=tftex01_1.log"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex02/tftex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "log outf=tftex02_1.log"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex03/tftex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "log outf=tftex03.log"
+          ]
+        }
+      ],
+      "save outf": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "save outf=vcselex01_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "save outf=vcselex02_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "save outf=vcselex03_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": [
+            "save outf=vcselex04_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex01/tftex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "save outf=tftex01_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex02/tftex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "save outf=tftex02_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex03/tftex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "save outf=tftex03_0.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex04/tftex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "save outf=tftex04_0.str"
+          ]
+        }
+      ],
+      "method": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "method block"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "method block"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex01/thermalex01.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "method"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex02/thermalex02.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "method"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex03/thermalex03.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "method"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex04/thermalex04.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "iii_v",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "method newton"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex05/thermalex05.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "method"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex06/thermalex06.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "method"
+          ]
+        }
+      ],
+      "mesh infile": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex01/thermalex01.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex01.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex02/thermalex02.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex02.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex03/thermalex03.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex03.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex04/thermalex04.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "iii_v",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=TensorProduct",
+            "mesh infile=thermalex04.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex05/thermalex05.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex05.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex06/thermalex06.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex06.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex07/thermalex07.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "Mesh Mode=MeshBuild",
+            "mesh infile=thermalex07.str"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": [
+            "mesh infile=solarex01_0.str",
+            "mesh infile=solarex01_0.str"
+          ]
+        }
+      ],
+      "models": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex01/thermalex01.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex02/thermalex02.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex03/thermalex03.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "mos",
+            "oxide",
+            "region"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex04/thermalex04.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "iii_v",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex05/thermalex05.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex06/thermalex06.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex07/thermalex07.in",
+          "tags": [
+            "atlas",
+            "cv",
+            "devedit",
+            "devedit_atlas_flow",
+            "generic",
+            "material",
+            "mesh",
+            "mesh_infile",
+            "method",
+            "models",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex08/thermalex08.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "generic",
+            "log",
+            "luminous",
+            "mesh",
+            "method",
+            "models",
+            "optical",
+            "region",
+            "solve"
+          ],
+          "snippets": [
+            "models thermal"
+          ]
+        }
+      ],
+      "contact": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex01/tftex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "contact\tnum=1 alum"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex02/tftex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "contact\tnum=1 alum"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex03/tftex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "contact\tnum=1 n.polysilicon"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex04/tftex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "contact\tnum=1 n.polysilicon"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": [
+            "contact\tname=gate alum"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex06/tftex06.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "mobility"
+          ],
+          "snippets": [
+            "contact\tnum=1 alum"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex07/tftex07.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "contact\tnum=1 n.polysilicon"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex08/tftex08.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "contact\tnum=1 n.polysilicon"
+          ]
+        }
+      ],
+      "doping": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex01/tftex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "doping     reg=2  uniform conc=7.e14 n.type"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex02/tftex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "doping     reg=2  uniform conc=7.e14 n.type"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex03/tftex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "doping     reg=2  uniform conc=1.e11 n.type"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex04/tftex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "doping     reg=2  uniform conc=1.e11 n.type"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex06/tftex06.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "mobility"
+          ],
+          "snippets": [
+            "doping     reg=2  uniform conc=7.e14 n.type"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex07/tftex07.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "doping     reg=2  uniform conc=1.e11 n.type"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex08/tftex08.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "doping     reg=2  uniform conc=1.e11 n.type"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex09/tftex09.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "models",
+            "mos"
+          ],
+          "snippets": [
+            "doping  uniform conc=1.e15 n.type"
+          ]
+        }
+      ],
+      "extract": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex05/tftex05.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "electrode",
+            "etch",
+            "extract",
+            "iv",
+            "leakage"
+          ],
+          "snippets": [
+            "extract name=\"max_rev_id\" y.val from curve(v.\"gate\",i.\"drain\") where x.val=-20"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex12/tftex12.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "electrode",
+            "etch",
+            "extract",
+            "init"
+          ],
+          "snippets": [
+            "extract name=\"Vth\" x.val from curve(v.\"gate\", i.\"drain\") where y.val=1e-5"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex20/tftex20_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method",
+            "mobility",
+            "models"
+          ],
+          "snippets": [
+            "extract init infile=\"tftex20_1_$'dt'.log\""
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex21/tftex21.in",
+          "tags": [
+            "cv",
+            "extract",
+            "iii_v",
+            "iv",
+            "mobility",
+            "save",
+            "tonyplot"
+          ],
+          "snippets": [
+            "extract init infile=\"tftex21_vd01_igzo-tokyo_253.log\""
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/tft/tftex21/tftex21_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "deposition",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "extract name=\"vt_01\" x.val from curve( v.\"gate\", abs(i.\"drain\") ) where y.val=$i_vt"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sonos/sonosex02/sonosex02_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "electrode",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": [
+            "extract name=\"Charged for 0s\" (xintercept(maxslope(curve(abs(v.\"gate\"),abs(i.\"drain\")))) \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sonos/sonosex05/sonosex05.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "electrode",
+            "extract",
+            "iv",
+            "log",
+            "material",
+            "mesh",
+            "models"
+          ],
+          "snippets": [
+            "extract name=\"vt0\" (xintercept(maxslope(curve(abs(v.\"gate\"),abs(i.\"drain\")))) \\"
+          ]
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/sonos/sonosex06/sonosex06_aux.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "electrode",
+            "extract",
+            "ge",
+            "iv",
+            "log",
+            "mesh",
+            "mos"
+          ],
+          "snippets": [
+            "extract name=\"vt\" (xintercept(maxslope(curve(abs(v.\"gate\"),abs(i.\"drain\")))) \\"
+          ]
+        }
+      ],
+      "log off": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/quantum/quantumex22/quantumex22.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "diffusion",
+            "doping",
+            "electrode",
+            "ge",
+            "iii_v",
+            "iv",
+            "laser",
+            "led",
+            "log"
+          ],
+          "snippets": [
+            "log off"
+          ]
+        }
+      ]
+    },
+    "luminous": {
+      "luminous": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex01/vcselex01.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex02/vcselex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex03/vcselex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/vcsel/vcselex04/vcselex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "iii_v",
+            "iv",
+            "laser",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "region"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex08/thermalex08.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "generic",
+            "log",
+            "luminous",
+            "mesh",
+            "method",
+            "models",
+            "optical",
+            "region",
+            "solve"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": []
+        }
+      ],
+      "optical": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/thermal/thermalex08/thermalex08.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "generic",
+            "log",
+            "luminous",
+            "mesh",
+            "method",
+            "models",
+            "optical",
+            "region",
+            "solve"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex02/solarex02.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "models",
+            "optical"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex03/solarex03.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "extract",
+            "iii_v",
+            "iv",
+            "led",
+            "log",
+            "luminous",
+            "material",
+            "mesh"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex04/solarex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "extract",
+            "ge",
+            "iii_v",
+            "led",
+            "log",
+            "luminous",
+            "material",
+            "mesh"
+          ],
+          "snippets": []
+        }
+      ],
+      "photocurrent": [
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex01/solarex01.in",
+          "tags": [
+            "athena",
+            "athena_atlas_flow",
+            "atlas",
+            "contact",
+            "cv",
+            "deposition",
+            "diffuse",
+            "diffusion",
+            "electrode",
+            "etch",
+            "extract",
+            "implant"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex04/solarex04.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "cv",
+            "electrode",
+            "extract",
+            "ge",
+            "iii_v",
+            "led",
+            "log",
+            "luminous",
+            "material",
+            "mesh"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex08/solarex08.in",
+          "tags": [
+            "athena",
+            "atlas",
+            "atlas_direct",
+            "breakdown",
+            "cv",
+            "deposition",
+            "diffusion",
+            "doping",
+            "extract",
+            "ge",
+            "iv",
+            "log"
+          ],
+          "snippets": []
+        },
+        {
+          "source_path": "<SILVACO_EXAMPLES_ROOT>/solar/solarex12/solarex12.in",
+          "tags": [
+            "atlas",
+            "atlas_direct",
+            "contact",
+            "cv",
+            "doping",
+            "extract",
+            "iv",
+            "log",
+            "luminous",
+            "material",
+            "mesh",
+            "method"
+          ],
+          "snippets": []
+        }
+      ]
+    }
+  }
+}

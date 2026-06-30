@@ -1,0 +1,31 @@
+﻿# Generated DevEdit structure deck for dryrun_pn_complete.
+# Route: DevEdit -> dryrun_pn_complete_device.str -> ATLAS.
+
+go devedit
+
+region reg=1 name=p_region mat=Silicon color=0xffcc00 pattern=0x4 polygon="0.0,0.0 5.0,0.0 5.0,2.0 0.0,2.0"
+impurity id=1 region.id=1 imp=Boron peak.value=1.0e16 ref.value=1e12 comb.func=Multiply
+constr.mesh region=1 default
+
+region reg=2 name=n_region mat=Silicon color=0xffcc00 pattern=0x4 polygon="5.0,0.0 10.0,0.0 10.0,2.0 5.0,2.0"
+impurity id=2 region.id=2 imp=Phosphorus peak.value=1.0e16 ref.value=1e12 comb.func=Multiply
+constr.mesh region=2 default
+
+region reg=3 name=anode mat=Aluminum elec.id=1 color=0xffcc00 pattern=0x4 polygon="0.0,0.0 1.0,0.0 1.0,-0.1 0.0,-0.1"
+constr.mesh region=3 default
+
+region reg=4 name=cathode mat=Aluminum elec.id=2 color=0xffcc00 pattern=0x4 polygon="9.0,0.0 10.0,0.0 10.0,-0.1 9.0,-0.1"
+constr.mesh region=4 default
+
+impurity id=3 imp=Boron peak.value=1.0e19 ref.value=1e14 comb.func=Multiply x1=0.0 x2=1.0 rolloff.x=step y1=0.0 y2=0.2 rolloff.y=step
+impurity id=4 imp=Phosphorus peak.value=1.0e19 ref.value=1e14 comb.func=Multiply x1=9.0 x2=10.0 rolloff.x=step y1=0.0 y2=0.2 rolloff.y=step
+
+base.mesh height=0.05 width=0.05
+bound.cond !apply max.slope=28 max.ratio=300 rnd.unit=0.001 line.straightening=1 align.points when=automatic
+constr.mesh max.angle=90 max.ratio=300 max.height=10000 max.width=10000 min.height=0.0001 min.width=0.0001
+constr.mesh type=Semiconductor default
+constr.mesh type=Metal default
+Mesh Mode=MeshBuild
+
+struct outf=dryrun_pn_complete_device.str
+quit

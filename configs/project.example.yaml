@@ -1,0 +1,5 @@
+project:
+  name: example_project
+  workspace_root: <WORKSPACE_ROOT>
+  examples_root: <EXAMPLES_ROOT>
+  output_root: cases

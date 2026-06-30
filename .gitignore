@@ -1,0 +1,43 @@
+# Silvaco runtime outputs
+*.str
+*.log
+*.out
+*.plt
+*.set
+*.history
+*.dat
+*.csv
+*.png
+
+# License and local config
+*.lic
+license*
+*.env
+.env
+local_config.yaml
+silvaco_paths.yaml
+
+# Local examples and archives
+raw_examples/
+external_examples/
+local_examples/
+archive/
+runs/
+results/
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.pyc.*
+*.pyo
+data/silvaco_examples_index.json
+docs/silvaco_examples_index.md

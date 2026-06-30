@@ -1,0 +1,20 @@
+﻿value:
+  route: devedit_atlas
+  control_baseline: false
+  template: atlas_simulation/electrical_iv_atlas.in.j2
+  atlas:
+    case_name: dryrun_pn_complete
+    structure_input: dryrun_pn_complete_device.str
+    models: [srh, conmob, fldmob, fermi]
+    method: newton
+    contacts: []
+    iv_log: dryrun_pn_complete_iv.log
+    final_structure: dryrun_pn_complete_final.str
+    sweeps:
+      - electrode: anode
+        start: -1.0
+        step: 0.1
+        stop: 1.0
+source: user_provided
+model_source: user_provided_and_consistent_with_local_diode_pattern
+confirmed_by_user: true

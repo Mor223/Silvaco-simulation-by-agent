@@ -1,0 +1,11 @@
+# Example only. Reads the ATHENA output structure; not physically validated.
+go atlas
+mesh infile="pn_athena_atlas_minimal_process.str"
+models srh
+method newton
+solve init
+log outf="pn_athena_atlas_minimal_iv.log"
+solve name=anode vanode=-1.0 vstep=0.1 vfinal=1.0
+log off
+save outf="pn_athena_atlas_minimal_final.str"
+quit

@@ -1,0 +1,15 @@
+﻿# Generated ATLAS/Luminous optoelectronic simulation deck for {{ case_name }}.
+# Only render after wavelength, optical source, incidence geometry, and outputs are confirmed.
+
+go atlas
+
+mesh infile="{{ structure_input }}"
+models {{ models | join(' ') }}
+method {{ method }}
+beam num=1 wavelength={{ optical.wavelength }} angle={{ optical.angle }} x.origin={{ optical.x_origin }} y.origin={{ optical.y_origin }}
+solve init
+log outf="{{ photo_log }}"
+solve b1={{ optical.power }}
+log off
+save outf="{{ final_structure }}"
+quit

@@ -1,0 +1,17 @@
+value:
+  route: athena_atlas
+  template: athena_process/generic_diode_process_athena.in.j2
+  athena:
+    case_name: pn_athena_atlas_minimal
+    structure_output: pn_athena_atlas_minimal_process.str
+    mesh:
+      x_lines: [{loc: 0.0, spac: 0.1}, {loc: 1.0, spac: 0.1}]
+      y_lines: [{loc: 0.0, spac: 0.05}, {loc: 1.0, spac: 0.05}]
+    substrate: {type: p, concentration: 1.0e15, orientation: 100}
+    process_steps:
+      - {command: "implant phosphorus dose=1.0e13 energy=50"}
+      - {command: "diffuse time=10 temp=900"}
+    electrodes:
+      - {name: anode, location: left}
+      - {name: cathode, location: right}
+confirmed_by_user: true

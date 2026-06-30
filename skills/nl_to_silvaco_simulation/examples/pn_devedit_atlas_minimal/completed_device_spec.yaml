@@ -1,0 +1,58 @@
+﻿value:
+  route: devedit_atlas
+  template: devedit_structure/lateral_pn_devedit.in.j2
+  devedit:
+    case_name: dryrun_pn_complete
+    dimension: 2d
+    structure_output: dryrun_pn_complete_device.str
+    regions:
+      - id: 1
+        name: p_region
+        material: Silicon
+        polygon: "0.0,0.0 5.0,0.0 5.0,2.0 0.0,2.0"
+        impurity:
+          id: 1
+          species: Boron
+          concentration: 1.0e16
+      - id: 2
+        name: n_region
+        material: Silicon
+        polygon: "5.0,0.0 10.0,0.0 10.0,2.0 5.0,2.0"
+        impurity:
+          id: 2
+          species: Phosphorus
+          concentration: 1.0e16
+      - id: 3
+        name: anode
+        material: Aluminum
+        elec_id: 1
+        polygon: "0.0,0.0 1.0,0.0 1.0,-0.1 0.0,-0.1"
+      - id: 4
+        name: cathode
+        material: Aluminum
+        elec_id: 2
+        polygon: "9.0,0.0 10.0,0.0 10.0,-0.1 9.0,-0.1"
+    implants:
+      - id: 3
+        species: Boron
+        concentration: 1.0e19
+        x_min: 0.0
+        x_max: 1.0
+        y_min: 0.0
+        y_max: 0.2
+      - id: 4
+        species: Phosphorus
+        concentration: 1.0e19
+        x_min: 9.0
+        x_max: 10.0
+        y_min: 0.0
+        y_max: 0.2
+    mesh:
+      base_height: 0.05
+      base_width: 0.05
+      min_height: 0.0001
+      min_width: 0.0001
+source: user_provided
+authority: dry-run B request treated as complete and confirmed
+confirmed_by_user: true
+

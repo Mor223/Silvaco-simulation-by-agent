@@ -1,0 +1,20 @@
+# Example only. Direct ATLAS control baseline; not a replacement for full flow validation.
+go atlas
+mesh space.mult=1.0
+x.mesh loc=0.0 spac=0.1
+x.mesh loc=1.0 spac=0.1
+y.mesh loc=0.0 spac=0.05
+y.mesh loc=1.0 spac=0.05
+region num=1 material=Silicon x.min=0.0 x.max=1.0 y.min=0.0 y.max=1.0
+electrode name=anode x.min=0.0 x.max=0.1 y.min=0.0 y.max=0.0
+electrode name=cathode x.min=0.9 x.max=1.0 y.min=0.0 y.max=0.0
+doping uniform p.type conc=1.0e15 x.min=0.0 x.max=0.5 y.min=0.0 y.max=1.0
+doping uniform n.type conc=1.0e15 x.min=0.5 x.max=1.0 y.min=0.0 y.max=1.0
+models srh
+method newton
+solve init
+log outf="atlas_direct_control_iv.log"
+solve name=anode vanode=-1.0 vstep=0.1 vfinal=1.0
+log off
+save outf="atlas_direct_control_final.str"
+quit

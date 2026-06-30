@@ -1,0 +1,11 @@
+value:
+  route: devedit_atlas
+  template: devedit_structure/lateral_pn_devedit.in.j2
+  devedit:
+    case_name: <CASE_NAME>
+    dimension: 2d
+    structure_output: <CASE_NAME>_device.str
+    regions: []
+    implants: []
+    mesh: {base_height: 0.05, base_width: 0.05, min_height: 0.0001, min_width: 0.0001}
+confirmed_by_user: false

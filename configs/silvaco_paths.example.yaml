@@ -1,0 +1,3 @@
+silvaco:
+  examples_root: <EXAMPLES_ROOT>
+  notes: Optional local example scanning path. This project does not run simulators.

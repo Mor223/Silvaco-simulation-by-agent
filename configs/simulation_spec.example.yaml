@@ -1,0 +1,14 @@
+value:
+  route: devedit_atlas
+  control_baseline: false
+  template: atlas_simulation/electrical_iv_atlas.in.j2
+  atlas:
+    case_name: <CASE_NAME>
+    structure_input: <CASE_NAME>_device.str
+    models: [srh]
+    method: newton
+    contacts: []
+    iv_log: <CASE_NAME>_iv.log
+    final_structure: <CASE_NAME>_final.str
+    sweeps: []
+confirmed_by_user: false

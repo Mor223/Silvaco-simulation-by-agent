@@ -1,0 +1,25 @@
+﻿# ATLAS direct PN control baseline for {{ case_name }}.
+# This is only a control baseline and does not replace DevEdit/ATHENA -> .str -> ATLAS.
+
+go atlas
+
+mesh space.mult=1.0
+{% for point in mesh.x -%}
+x.mesh loc={{ point.loc }} spac={{ point.spac }}
+{% endfor -%}
+{% for point in mesh.y -%}
+y.mesh loc={{ point.loc }} spac={{ point.spac }}
+{% endfor %}
+region num=1 material={{ material }} x.min={{ geometry.x_min }} x.max={{ geometry.x_max }} y.min={{ geometry.y_min }} y.max={{ geometry.y_max }}
+electrode name=anode x.min={{ electrodes.anode.x_min }} x.max={{ electrodes.anode.x_max }} y.min={{ electrodes.anode.y_min }} y.max={{ electrodes.anode.y_max }}
+electrode name=cathode x.min={{ electrodes.cathode.x_min }} x.max={{ electrodes.cathode.x_max }} y.min={{ electrodes.cathode.y_min }} y.max={{ electrodes.cathode.y_max }}
+doping uniform p.type conc={{ doping.p_region.concentration }} x.min={{ doping.p_region.x_min }} x.max={{ doping.p_region.x_max }} y.min={{ doping.p_region.y_min }} y.max={{ doping.p_region.y_max }}
+doping uniform n.type conc={{ doping.n_region.concentration }} x.min={{ doping.n_region.x_min }} x.max={{ doping.n_region.x_max }} y.min={{ doping.n_region.y_min }} y.max={{ doping.n_region.y_max }}
+models {{ models | join(' ') }}
+method {{ method }}
+solve init
+log outf="{{ iv_log }}"
+solve name={{ sweep.electrode }} v{{ sweep.electrode }}={{ sweep.start }} vstep={{ sweep.step }} vfinal={{ sweep.stop }}
+log off
+save outf="{{ final_structure }}"
+quit
